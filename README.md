@@ -28,6 +28,28 @@ $user->setAuthenticator($authenticator);
 
 ```
 
+or register extension
+
+```yml
+
+extensions:
+    authenticator: Nella\SimpleHashAuthenticator\Extension
+
+authenticator:
+    users:
+        demo:
+            password: '$2y$10$l5cjVRLvK2mjm6hzj8.s8.yjXmtO0Eio0JNt.JwAbZccndN9m1IVi'
+            roles:
+                - admin
+
+# or without roles
+
+authenticator:
+    users:
+        demo: '$2y$10$l5cjVRLvK2mjm6hzj8.s8.yjXmtO0Eio0JNt.JwAbZccndN9m1IVi'
+
+```
+
 License
 -------
 Simple hash authenticator for Nette Framework is licensed under the MIT License - see the LICENSE file for details
