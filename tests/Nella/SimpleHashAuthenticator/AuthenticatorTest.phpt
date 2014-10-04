@@ -15,7 +15,6 @@ namespace Nella\SimpleHashAuthenticator;
 
 use Tester\Assert;
 use Nette\Security\IAuthenticator;
-use Nette\Security\AuthenticationException;
 
 require __DIR__ . '/../../bootstrap.php';
 
@@ -60,7 +59,7 @@ class AuthenticatorTest extends \Tester\TestCase
                 IAuthenticator::USERNAME => 'test',
                 IAuthenticator::PASSWORD => 'invalid',
             ));
-        }, AuthenticationException::class, NULL, IAuthenticator::INVALID_CREDENTIAL);
+        }, 'Nette\Security\AuthenticationException', NULL, IAuthenticator::INVALID_CREDENTIAL);
     }
 
     public function testInvalidUsername()
@@ -72,7 +71,7 @@ class AuthenticatorTest extends \Tester\TestCase
                 IAuthenticator::USERNAME => 'invalid',
                 IAuthenticator::PASSWORD => 'invalid',
             ));
-        }, AuthenticationException::class, NULL, IAuthenticator::IDENTITY_NOT_FOUND);
+        }, 'Nette\Security\AuthenticationException', NULL, IAuthenticator::IDENTITY_NOT_FOUND);
     }
 
     public function testTestRole()
