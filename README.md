@@ -50,6 +50,17 @@ authenticator:
 
 ```
 
+For hash generator:
+
+```yml
+
+authenticator:
+    router: @router # or your router service name
+
+```
+
+and go to `http://yourweb.local/authenticator`
+
 License
 -------
 Simple hash authenticator for Nette Framework is licensed under the MIT License - see the LICENSE file for details
