@@ -1,6 +1,6 @@
 {
   "name": "nella/simple-hash-authenticator",
-  "description": "Phone control for Nette Forms.",
+  "description": "Simple Hash Authenticator for Nette Framework",
   "homepage": "https://github.com/nella/simple-hash-authenticator",
   "type": "library",
   "keywords": ["nette", "authenticator", "simple", "hash", "security"],
