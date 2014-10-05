@@ -1,7 +1,10 @@
 Simple hash authenticator for [Nette Framework](http://nette.org)
 =================================================================
 
-[![Latest Stable Version](https://poser.pugx.org/nella/simple-hash-authenticator/version.png)](https://packagist.org/packages/nella/simple-hash-authenticator) [![Composer Downloads](https://poser.pugx.org/nella/simple-hash-authenticator/d/total.png)](https://packagist.org/packages/nella/simple-hash-authenticator) [![Dependencies Status](http://depending.in/nella/simple-hash-authenticator.png?branch=master)](http://depending.in/nella/simple-hash-authenticator)
+[![Build Status](https://travis-ci.org/nella/simple-hash-authenticator.svg?branch=master)](https://travis-ci.org/nella/simple-hash-authenticator)
+[![Latest Stable Version](https://poser.pugx.org/nella/simple-hash-authenticator/version.png)](https://packagist.org/packages/nella/simple-hash-authenticator)
+[![Composer Downloads](https://poser.pugx.org/nella/simple-hash-authenticator/d/total.png)](https://packagist.org/packages/nella/simple-hash-authenticator)
+[![Dependency Status](https://www.versioneye.com/user/projects/54315275fc3f5c2f0b00055c/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54315275fc3f5c2f0b00055c)
 
 Installation
 ------------
