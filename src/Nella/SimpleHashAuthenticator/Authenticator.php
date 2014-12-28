@@ -13,43 +13,44 @@ namespace Nella\SimpleHashAuthenticator;
 class Authenticator extends \Nette\Object implements \Nette\Security\IAuthenticator
 {
 
-    /** @var array */
-    private $users;
+	/** @var array */
+	private $users;
 
-    /** @var array */
-    private $usersRoles;
+	/** @var array */
+	private $usersRoles;
 
-    /**
-     * @param string[]|array list of pairs username => password
-     * @param string[]|array list of pairs username => role[]
-     */
-    public function __construct(array $users, array $usersRoles = array())
-    {
-        $this->users = $users;
-        $this->usersRoles = $usersRoles;
-    }
+	/**
+	 * @param string[]|array list of pairs username => password
+	 * @param string[]|array list of pairs username => role[]
+	 */
+	public function __construct(array $users, array $usersRoles = array())
+	{
+		$this->users = $users;
+		$this->usersRoles = $usersRoles;
+	}
 
 
-    /**
-     * @return \Nette\Security\IIdentity
-     * @throws \Nette\Security\AuthenticationException
-     */
-    public function authenticate(array $credentials)
-    {
-        list($username, $password) = $credentials;
-        foreach ($this->users as $name => $hash) {
-            if (strcasecmp($name, $username) === 0) {
-                if (\Nette\Security\Passwords::verify($password, $hash)) {
-                    return new \Nette\Security\Identity(
-                        $name,
-                        isset($this->usersRoles[$name]) ? $this->usersRoles[$name] : NULL
-                    );
-                } else {
-                    throw new \Nette\Security\AuthenticationException('Invalid password.', self::INVALID_CREDENTIAL);
-                }
-            }
-        }
-        throw new \Nette\Security\AuthenticationException("User '$username' not found.", self::IDENTITY_NOT_FOUND);
-    }
+	/**
+	 * @return \Nette\Security\IIdentity
+	 * @throws \Nette\Security\AuthenticationException
+	 */
+	public function authenticate(array $credentials)
+	{
+		list($username, $password) = $credentials;
+		foreach ($this->users as $name => $hash) {
+			if (strcasecmp($name, $username) === 0) {
+				if (\Nette\Security\Passwords::verify($password, $hash)) {
+					return new \Nette\Security\Identity(
+						$name,
+						isset($this->usersRoles[$name]) ? $this->usersRoles[$name] : NULL
+					);
+				} else {
+					throw new \Nette\Security\AuthenticationException('Invalid password.', static::INVALID_CREDENTIAL);
+				}
+			}
+		}
+		$message = sprintf('User "%s" not found.', $username);
+		throw new \Nette\Security\AuthenticationException($message, static::IDENTITY_NOT_FOUND);
+	}
 
 }
