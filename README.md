@@ -1,12 +1,12 @@
 Simple hash authenticator for [Nette Framework](http://nette.org)
 =================================================================
 
-[![Build Status](https://travis-ci.org/nella/simple-hash-authenticator.svg?branch=master)](https://travis-ci.org/nella/simple-hash-authenticator)
-[![SensioLabsInsight Status](https://insight.sensiolabs.com/projects/455da9d6-b50b-4d8f-b455-f30d93029e65/mini.png)](https://insight.sensiolabs.com/projects/455da9d6-b50b-4d8f-b455-f30d93029e65)
-[![Latest Stable Version](https://poser.pugx.org/nella/simple-hash-authenticator/version.png)](https://packagist.org/packages/nella/simple-hash-authenticator)
-[![Composer Downloads](https://poser.pugx.org/nella/simple-hash-authenticator/d/total.png)](https://packagist.org/packages/nella/simple-hash-authenticator)
-[![Dependency Status](https://www.versioneye.com/user/projects/54315275fc3f5c2f0b00055c/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54315275fc3f5c2f0b00055c)
-[![HHVM Status](http://hhvm.h4cc.de/badge/nella/simple-hash-authenticator.svg)](http://hhvm.h4cc.de/package/nella/simple-hash-authenticator)
+[![Build Status](https://img.shields.io/travis/nella/simple-hash-authenticator.svg?style=flat-square)](https://travis-ci.org/nella/simple-hash-authenticator)
+[![SensioLabsInsight Status](https://img.shields.io/sensiolabs/i/455da9d6-b50b-4d8f-b455-f30d93029e65.svg?style=flat-square)](https://insight.sensiolabs.com/projects/455da9d6-b50b-4d8f-b455-f30d93029e65)
+[![Latest Stable Version](https://img.shields.io/packagist/v/nella/simple-hash-authenticator.svg?style=flat-square)](https://packagist.org/packages/nella/simple-hash-authenticator)
+[![Composer Downloads](https://img.shields.io/packagist/dt/nella/simple-hash-authenticator.svg?style=flat-square)](https://packagist.org/packages/nella/simple-hash-authenticator)
+[![Dependency Status](https://img.shields.io/versioneye/d/user/projects/54315275fc3f5c2f0b00055c.svg?style=flat-square)](https://www.versioneye.com/user/projects/54315275fc3f5c2f0b00055c)
+[![HHVM Status](https://img.shields.io/hhvm/nella/simple-hash-authenticator.svg?style=flat-square)](http://hhvm.h4cc.de/package/nella/simple-hash-authenticator)
 
 Installation
 ------------
