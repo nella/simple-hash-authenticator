@@ -22,6 +22,9 @@
 			"Nella\\SimpleHashAuthenticator\\": "src/Nella/SimpleHashAuthenticator"
 		}
 	},
+	"autoload-dev": {
+		"classmap": ["tests/Nella"]
+	},
 	"require": {
 		"php": ">=5.3.7",
 		"nette/security": "~2.2,<2.3.0"

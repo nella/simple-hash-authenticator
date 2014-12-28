@@ -12,5 +12,3 @@ Tester\Environment::setup();
 function id($val) {
     return $val;
 }
-
-require_once __DIR__ . '/../src/Nella/SimpleHashAuthenticator/Authenticator.php';
