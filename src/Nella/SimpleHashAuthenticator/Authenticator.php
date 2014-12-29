@@ -50,7 +50,8 @@ class Authenticator extends \Nette\Object implements \Nette\Security\IAuthentica
 			}
 		}
 		throw new \Nette\Security\AuthenticationException(
-			sprintf('User "%s" not found.', $username), static::IDENTITY_NOT_FOUND
+			sprintf('User "%s" not found.', $username),
+			static::IDENTITY_NOT_FOUND
 		);
 	}
 

@@ -54,7 +54,7 @@ class AuthenticatorTest extends \Tester\TestCase
 	{
 		$authenticator = $this->create();
 
-		Assert::exception(function() use($authenticator) {
+		Assert::exception(function() use ($authenticator) {
 			$authenticator->authenticate(array(
 				IAuthenticator::USERNAME => 'test',
 				IAuthenticator::PASSWORD => 'invalid',
@@ -66,7 +66,7 @@ class AuthenticatorTest extends \Tester\TestCase
 	{
 		$authenticator = $this->create();
 
-		Assert::exception(function() use($authenticator) {
+		Assert::exception(function() use ($authenticator) {
 			$authenticator->authenticate(array(
 				IAuthenticator::USERNAME => 'invalid',
 				IAuthenticator::PASSWORD => 'invalid',
